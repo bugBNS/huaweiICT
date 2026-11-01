@@ -1,0 +1,63 @@
+# ============================================================
+# 华为ICT大赛 赛题1 · 项目 .gitignore（精简版）
+# 原则：密钥、模型、数据、依赖、构建产物不入库
+# 以后用到 Java/Unity，再追加对应段落即可
+# ============================================================
+
+# ---------- 密钥与配置（最重要） ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+credentials*
+.obsutilconfig
+kubeconfig*
+*.tfstate
+*.tfstate.*
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# ---------- Node / 前端 ----------
+node_modules/
+dist/
+build/
+.next/
+coverage/
+*.log
+
+# ---------- Java（后端用 Spring Boot 时保留，不用可删） ----------
+target/
+*.class
+*.jar
+
+# ---------- 模型 / 数据 / 大文件 ----------
+models/
+checkpoints/
+datasets/
+data/raw/
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.safetensors
+*.mp4
+*.wav
+
+# ---------- IDE / 操作系统 ----------
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
