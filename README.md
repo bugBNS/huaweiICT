@@ -1,3 +1,14 @@
+# 智巡卫士 2.0
+
+仓库骨架与 S-01 契约已放在 `schemas/`、`samples/`、`docs/api-contract.md`。A/C 先读样例 JSON，再写自己的模块。
+
+```powershell
+python -m pip install -r requirements.txt
+python -m pytest tests/unit/test_schema_validation.py
+```
+
+---
+
 # 智巡卫士 2.0｜三人 Issue 重构包
 
 > 给三个人各一份，不要混着看：

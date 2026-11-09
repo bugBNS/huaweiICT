@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "run_demo_001",
+  "scenario_id": "sc_cross_001",
+  "model_version": null,
+  "risk_rule_version": "risk-v0.1",
+  "coordinate_mode": "GROUND_METRIC",
+  "timestamp_ms": 2400,
+  "initial_state_id": "state_t2.4s",
+  "recommended_strategy": "F_SLOW_50",
+  "no_feasible_strategy": false,
+  "outcomes": [
+    {
+      "strategy_id": "KEEP",
+      "feasible": true,
+      "delay_s": 0.0,
+      "extra_path_m": 0.0,
+      "scene_risk_index": 0.81,
+      "infeasible_reason": null
+    },
+    {
+      "strategy_id": "F_SLOW_75",
+      "feasible": true,
+      "delay_s": 1.1,
+      "extra_path_m": 0.0,
+      "scene_risk_index": 0.55,
+      "infeasible_reason": null
+    },
+    {
+      "strategy_id": "F_SLOW_50",
+      "feasible": true,
+      "delay_s": 2.4,
+      "extra_path_m": 0.0,
+      "scene_risk_index": 0.33,
+      "infeasible_reason": null
+    },
+    {
+      "strategy_id": "F_STOP",
+      "feasible": true,
+      "delay_s": 6.0,
+      "extra_path_m": 0.0,
+      "scene_risk_index": 0.12,
+      "infeasible_reason": null
+    }
+  ],
+  "explanation": "Under the safety cap, F_SLOW_50 reduces scene risk with moderate delay. Simulation advice only; do not send commands to real equipment.",
+  "simulation_advice": true
+}

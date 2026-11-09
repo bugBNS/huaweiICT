@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "run_demo_001",
+  "scenario_id": "sc_cross_001",
+  "model_version": "rtmdet-tiny-0.1",
+  "risk_rule_version": null,
+  "coordinate_mode": "IMAGE_PIXEL",
+  "timestamp_ms": 0,
+  "image_id": "frame_000000",
+  "image_width": 1920,
+  "image_height": 1080,
+  "detections": [
+    {
+      "class": "person",
+      "bbox": { "x1": 820.0, "y1": 410.0, "x2": 910.0, "y2": 720.0, "unit": "px" },
+      "conf": 0.91
+    },
+    {
+      "class": "forklift",
+      "bbox": { "x1": 240.0, "y1": 360.0, "x2": 620.0, "y2": 780.0, "unit": "px" },
+      "conf": 0.88
+    }
+  ]
+}

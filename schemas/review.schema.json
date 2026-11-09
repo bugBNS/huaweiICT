@@ -1,0 +1,54 @@
+{
+  "$defs": {
+    "ReviewDecision": {
+      "enum": [
+        "confirm",
+        "reject"
+      ],
+      "title": "ReviewDecision",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "job_id": {
+      "title": "Job Id",
+      "type": "string"
+    },
+    "run_id": {
+      "title": "Run Id",
+      "type": "string"
+    },
+    "decision": {
+      "$ref": "#/$defs/ReviewDecision"
+    },
+    "reviewer": {
+      "title": "Reviewer",
+      "type": "string"
+    },
+    "comment": {
+      "default": "",
+      "title": "Comment",
+      "type": "string"
+    },
+    "timestamp_ms": {
+      "minimum": 0,
+      "title": "Timestamp Ms",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "job_id",
+    "run_id",
+    "decision",
+    "reviewer",
+    "timestamp_ms"
+  ],
+  "title": "ReviewRecord",
+  "type": "object"
+}

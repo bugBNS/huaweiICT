@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "run_demo_001",
+  "scenario_id": "sc_cross_001",
+  "model_version": "cv-baseline-0.1",
+  "risk_rule_version": null,
+  "coordinate_mode": "GROUND_METRIC",
+  "timestamp_ms": 2400,
+  "dt_ms": 200,
+  "agents": [
+    {
+      "track_id": "p1",
+      "class": "person",
+      "history": [
+        {
+          "timestamp_ms": 2000,
+          "x": 12.0,
+          "y": 8.0,
+          "position_unit": "m",
+          "speed_mps": 1.2,
+          "heading_rad": 0.0
+        },
+        {
+          "timestamp_ms": 2200,
+          "x": 12.24,
+          "y": 8.0,
+          "position_unit": "m",
+          "speed_mps": 1.2,
+          "heading_rad": 0.0
+        }
+      ],
+      "branches": [
+        {
+          "branch_id": 0,
+          "score": 1.0,
+          "score_semantics": "uncalibrated_model_score",
+          "samples": [
+            {
+              "timestamp_ms": 2600,
+              "x": 12.48,
+              "y": 8.0,
+              "position_unit": "m",
+              "speed_mps": 1.2,
+              "heading_rad": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

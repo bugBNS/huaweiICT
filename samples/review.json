@@ -1,0 +1,9 @@
+{
+  "schema_version": "1.0.0",
+  "job_id": "job_demo_001",
+  "run_id": "run_demo_001",
+  "decision": "confirm",
+  "reviewer": "operator_c",
+  "comment": "Accept F_SLOW_50 as simulation advice.",
+  "timestamp_ms": 1730000000000
+}
