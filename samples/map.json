@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "run_demo_001",
+  "scenario_id": "sc_cross_001",
+  "model_version": null,
+  "risk_rule_version": null,
+  "coordinate_mode": "GROUND_METRIC",
+  "timestamp_ms": 0,
+  "name": "aisle_cross_demo",
+  "seed": 42,
+  "split": "demo",
+  "width_m": 30.0,
+  "height_m": 20.0,
+  "obstacles": [
+    {
+      "name": "shelf_a",
+      "kind": "shelf",
+      "vertices": [[2.0, 2.0], [14.0, 2.0], [14.0, 5.0], [2.0, 5.0]]
+    }
+  ],
+  "wait_lines": [
+    {
+      "name": "wait_north",
+      "kind": "wait_line",
+      "vertices": [[14.5, 9.0], [15.5, 9.0], [15.5, 11.0], [14.5, 11.0]]
+    }
+  ],
+  "agents": [
+    {
+      "agent_id": "p1",
+      "class": "person",
+      "start": [18.0, 4.0],
+      "goal": [18.0, 16.0],
+      "speed_mps": 1.2,
+      "reaction_time_s": 0.5,
+      "script": "cross_aisle"
+    },
+    {
+      "agent_id": "f1",
+      "class": "forklift",
+      "start": [4.0, 10.0],
+      "goal": [26.0, 10.0],
+      "speed_mps": 1.8,
+      "reaction_time_s": 0.8,
+      "script": "main_aisle"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "$defs": {
+    "AgentClass": {
+      "enum": [
+        "person",
+        "forklift"
+      ],
+      "title": "AgentClass",
+      "type": "string"
+    },
+    "BBoxXYXY": {
+      "additionalProperties": false,
+      "properties": {
+        "x1": {
+          "title": "X1",
+          "type": "number"
+        },
+        "y1": {
+          "title": "Y1",
+          "type": "number"
+        },
+        "x2": {
+          "title": "X2",
+          "type": "number"
+        },
+        "y2": {
+          "title": "Y2",
+          "type": "number"
+        },
+        "unit": {
+          "description": "px for detections; never m",
+          "title": "Unit",
+          "type": "string"
+        }
+      },
+      "required": [
+        "x1",
+        "y1",
+        "x2",
+        "y2",
+        "unit"
+      ],
+      "title": "BBoxXYXY",
+      "type": "object"
+    },
+    "CoordinateMode": {
+      "enum": [
+        "GROUND_METRIC",
+        "IMAGE_NORMALIZED",
+        "IMAGE_PIXEL"
+      ],
+      "title": "CoordinateMode",
+      "type": "string"
+    },
+    "Detection": {
+      "additionalProperties": false,
+      "properties": {
+        "class": {
+          "$ref": "#/$defs/AgentClass"
+        },
+        "bbox": {
+          "$ref": "#/$defs/BBoxXYXY"
+        },
+        "conf": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Conf",
+          "type": "number"
+        }
+      },
+      "required": [
+        "class",
+        "bbox",
+        "conf"
+      ],
+      "title": "Detection",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "run_id": {
+      "title": "Run Id",
+      "type": "string"
+    },
+    "scenario_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Scenario Id"
+    },
+    "model_version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Model Version"
+    },
+    "risk_rule_version": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Risk Rule Version"
+    },
+    "coordinate_mode": {
+      "$ref": "#/$defs/CoordinateMode",
+      "default": "IMAGE_PIXEL"
+    },
+    "timestamp_ms": {
+      "minimum": 0,
+      "title": "Timestamp Ms",
+      "type": "integer"
+    },
+    "image_id": {
+      "title": "Image Id",
+      "type": "string"
+    },
+    "image_width": {
+      "exclusiveMinimum": 0,
+      "title": "Image Width",
+      "type": "integer"
+    },
+    "image_height": {
+      "exclusiveMinimum": 0,
+      "title": "Image Height",
+      "type": "integer"
+    },
+    "detections": {
+      "items": {
+        "$ref": "#/$defs/Detection"
+      },
+      "title": "Detections",
+      "type": "array"
+    }
+  },
+  "required": [
+    "run_id",
+    "timestamp_ms",
+    "image_id",
+    "image_width",
+    "image_height",
+    "detections"
+  ],
+  "title": "DetectionFrame",
+  "type": "object"
+}

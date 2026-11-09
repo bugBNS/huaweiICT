@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "run_demo_001",
+  "scenario_id": "sc_cross_001",
+  "model_version": "bytetrack-0.1",
+  "risk_rule_version": null,
+  "coordinate_mode": "IMAGE_NORMALIZED",
+  "timestamp_ms": 400,
+  "tracks": [
+    {
+      "track_id": "p1",
+      "class": "person",
+      "points": [
+        {
+          "timestamp_ms": 0,
+          "x": 0.45,
+          "y": 0.62,
+          "position_unit": "norm",
+          "speed_mps": null,
+          "heading_rad": null,
+          "bbox": { "x1": 820.0, "y1": 410.0, "x2": 910.0, "y2": 720.0, "unit": "px" },
+          "center": [865.0, 565.0],
+          "foot": [865.0, 720.0],
+          "conf": 0.91,
+          "observed": true
+        },
+        {
+          "timestamp_ms": 200,
+          "x": 0.46,
+          "y": 0.61,
+          "position_unit": "norm",
+          "speed_mps": null,
+          "heading_rad": null,
+          "bbox": { "x1": 830.0, "y1": 400.0, "x2": 920.0, "y2": 710.0, "unit": "px" },
+          "center": [875.0, 555.0],
+          "foot": [875.0, 710.0],
+          "conf": 0.9,
+          "observed": true
+        }
+      ]
+    },
+    {
+      "track_id": "f1",
+      "class": "forklift",
+      "points": [
+        {
+          "timestamp_ms": 0,
+          "x": 0.22,
+          "y": 0.58,
+          "position_unit": "norm",
+          "speed_mps": null,
+          "heading_rad": null,
+          "bbox": { "x1": 240.0, "y1": 360.0, "x2": 620.0, "y2": 780.0, "unit": "px" },
+          "center": [430.0, 570.0],
+          "foot": [430.0, 780.0],
+          "conf": 0.88,
+          "observed": true
+        }
+      ]
+    }
+  ]
+}

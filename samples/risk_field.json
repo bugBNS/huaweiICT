@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "run_demo_001",
+  "scenario_id": "sc_cross_001",
+  "model_version": null,
+  "risk_rule_version": "risk-v0.1",
+  "coordinate_mode": "GROUND_METRIC",
+  "timestamp_ms": 2400,
+  "metrics": {
+    "ttc_s": 2.4,
+    "pet_s": null,
+    "min_clearance_m": 1.8,
+    "scene_risk_index": 0.62
+  },
+  "grid": [
+    { "x": 16.0, "y": 10.0, "t_ms": 2400, "risk": 0.71 },
+    { "x": 17.0, "y": 10.0, "t_ms": 2400, "risk": 0.54 }
+  ],
+  "param_snapshot": {
+    "grid_resolution_m": 1.0,
+    "ttc_horizon_s": 4.0,
+    "person_radius_m": 0.35
+  }
+}

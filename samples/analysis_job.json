@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "run_demo_001",
+  "scenario_id": "sc_cross_001",
+  "model_version": "rtmdet-tiny-0.1",
+  "risk_rule_version": "risk-v0.1",
+  "coordinate_mode": "IMAGE_PIXEL",
+  "timestamp_ms": 0,
+  "job_id": "job_demo_001",
+  "status": "succeeded",
+  "video_uri": "obs://zhixun-dev/videos/demo_cross.mp4",
+  "error_message": null,
+  "result_uris": {
+    "detections": "obs://zhixun-dev/results/run_demo_001/detection.json",
+    "tracks": "obs://zhixun-dev/results/run_demo_001/tracks.json",
+    "risk": "obs://zhixun-dev/results/run_demo_001/risk_field.json"
+  }
+}
