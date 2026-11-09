@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "b3904eeae9c70d1b84a0_014f5a0f9461dfae29d5_run_13_seed_587824276",
+  "scenario_id": "near_miss",
+  "model_version": "yolo11n-sdg-run13-smoke",
+  "risk_rule_version": null,
+  "coordinate_mode": "IMAGE_PIXEL",
+  "timestamp_ms": 0,
+  "image_id": "ceiling_01_000000",
+  "image_width": 1920,
+  "image_height": 1080,
+  "detections": [
+    {
+      "class": "forklift",
+      "bbox": {
+        "x1": 0.30246734619140625,
+        "y1": 7.016693115234375,
+        "x2": 294.4167175292969,
+        "y2": 577.3714599609375,
+        "unit": "px"
+      },
+      "conf": 0.5931938290596008
+    },
+    {
+      "class": "person",
+      "bbox": {
+        "x1": 880.1453247070312,
+        "y1": 237.9583282470703,
+        "x2": 1038.388427734375,
+        "y2": 567.9712524414062,
+        "unit": "px"
+      },
+      "conf": 0.34257444739341736
+    }
+  ]
+}
