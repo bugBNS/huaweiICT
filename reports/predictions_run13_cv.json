@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "b3904eeae9c70d1b84a0_014f5a0f9461dfae29d5_run_13_seed_587824276",
+  "scenario_id": "near_miss",
+  "model_version": "cv-baseline-0.1",
+  "risk_rule_version": null,
+  "coordinate_mode": "GROUND_METRIC",
+  "timestamp_ms": 1400,
+  "dt_ms": 200,
+  "agents": [
+    {
+      "track_id": "f1",
+      "class": "forklift",
+      "history": [
+        {
+          "timestamp_ms": 0,
+          "x": -3.753903388977051,
+          "y": -1.6684948205947876,
+          "position_unit": "m",
+          "speed_mps": 0.0040179384285618635,
+          "heading_rad": 2.227949223305845
+        },
+        {
+          "timestamp_ms": 200,
+          "x": -3.6731998920440674,
+          "y": -1.702581763267517,
+          "position_unit": "m",
+          "speed_mps": 0.0040179384285618635,
+          "heading_rad": 2.227949223305845
+        },
+        {
+          "timestamp_ms": 400,
+          "x": -3.6525990962982178,
+          "y": -1.6458107233047485,
+          "position_unit": "m",
+          "speed_mps": 0.0040179384285618635,
+          "heading_rad": 2.227949223305845
+        },
+        {
+          "timestamp_ms": 600,
+          "x": -3.5640275478363037,
+          "y": -1.603065013885498,
+          "position_unit": "m",
+          "speed_mps": 0.0040179384285618635,
+          "heading_rad": 2.227949223305845
+        },
+        {
+          "timestamp_ms": 800,
+          "x": -3.1828975677490234,
+          "y": -1.9582264423370361,
+          "position_unit": "m",
+          "speed_mps": 0.0040179384285618635,
+          "heading_rad": 2.227949223305845
+        },
+        {
+          "timestamp_ms": 1000,
+          "x": -3.6198618412017822,
+          "y": -1.6015770435333252,
+          "position_unit": "m",
+          "speed_mps": 0.0040179384285618635,
+          "heading_rad": 2.227949223305845
+        },
+        {
+          "timestamp_ms": 1200,
+          "x": -2.621406078338623,
+          "y": -2.484656572341919,
+          "position_unit": "m",
+          "speed_mps": 0.0040179384285618635,
+          "heading_rad": 2.227949223305845
+        },
+        {
+          "timestamp_ms": 1400,
+          "x": -3.1122898149490354,
+          "y": -1.8484283697605133,
+          "position_unit": "m",
+          "speed_mps": 0.0040179384285618635,
+          "heading_rad": 2.227949223305845
+        }
+      ],
+      "branches": [
+        {
+          "branch_id": 0,
+          "score": 1.0,
+          "score_semantics": "uncalibrated_model_score",
+          "samples": [
+            {
+              "timestamp_ms": 1600,
+              "x": -3.603173551559448,
+              "y": -1.2122001671791076,
+              "position_unit": "m",
+              "speed_mps": 0.0040179384285618635,
+              "heading_rad": 2.227949223305845
+            },
+            {
+              "timestamp_ms": 1800,
+              "x": -4.09405728816986,
+              "y": -0.575971964597702,
+              "position_unit": "m",
+              "speed_mps": 0.0040179384285618635,
+              "heading_rad": 2.227949223305845
+            },
+            {
+              "timestamp_ms": 2000,
+              "x": -4.584941024780273,
+              "y": 0.06025623798370372,
+              "position_unit": "m",
+              "speed_mps": 0.0040179384285618635,
+              "heading_rad": 2.227949223305845
+            },
+            {
+              "timestamp_ms": 2200,
+              "x": -5.075824761390685,
+              "y": 0.6964844405651094,
+              "position_unit": "m",
+              "speed_mps": 0.0040179384285618635,
+              "heading_rad": 2.227949223305845
+            },
+            {
+              "timestamp_ms": 2400,
+              "x": -5.5667084980010975,
+              "y": 1.3327126431465153,
+              "position_unit": "m",
+              "speed_mps": 0.0040179384285618635,
+              "heading_rad": 2.227949223305845
+            },
+            {
+              "timestamp_ms": 2600,
+              "x": -6.05759223461151,
+              "y": 1.9689408457279207,
+              "position_unit": "m",
+              "speed_mps": 0.0040179384285618635,
+              "heading_rad": 2.227949223305845
+            },
+            {
+              "timestamp_ms": 2800,
+              "x": -6.548475971221922,
+              "y": 2.6051690483093264,
+              "position_unit": "m",
+              "speed_mps": 0.0040179384285618635,
+              "heading_rad": 2.227949223305845
+            },
+            {
+              "timestamp_ms": 3000,
+              "x": -7.039359707832334,
+              "y": 3.2413972508907323,
+              "position_unit": "m",
+              "speed_mps": 0.0040179384285618635,
+              "heading_rad": 2.227949223305845
+            },
+            {
+              "timestamp_ms": 3200,
+              "x": -7.530243444442746,
+              "y": 3.877625453472138,
+              "position_unit": "m",
+              "speed_mps": 0.0040179384285618635,
+              "heading_rad": 2.227949223305845
+            },
+            {
+              "timestamp_ms": 3400,
+              "x": -8.02112718105316,
+              "y": 4.513853656053544,
+              "position_unit": "m",
+              "speed_mps": 0.0040179384285618635,
+              "heading_rad": 2.227949223305845
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
