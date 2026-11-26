@@ -1,6 +1,6 @@
 # 费用与清理
 
-默认区域：`cn-north-4`。标签：`project=zhixun` / `env=dev`。
+默认区域：`cn-east-3`。标签：`project=zhixun` / `env=dev`。
 
 ## 预算
 

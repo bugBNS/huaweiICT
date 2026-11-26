@@ -1,6 +1,6 @@
 # 华为云基座部署（S-02）
 
-锁死区域：**华北-北京四 `cn-north-4`**（控制台已在此区域；若大赛通知指定其他区域，以通知为准，三人必须同一区域）。
+锁死区域：**华东-上海一 `cn-east-3`**（现有 VPC/OBS/Redis 均在此区域；若大赛通知指定其他区域，以通知为准，三人必须同一区域）。码道 CodeArts 可以继续留在 `cn-north-4`，它是开发工具，不参与运行时网络。
 资源标签一律：`project=zhixun`，`env=dev`。
 日常使用 **IAM 子用户**，主账号只用来开资源、看账单、发权限。
 
@@ -9,14 +9,14 @@
 - [ ] 主账号已实名
 - [ ] 大赛代金券 / 预算已绑定
 - [ ] 费用中心已设预算告警
-- [ ] 区域已切到 `cn-north-4`（控制台右上角）
+- [ ] 区域已切到 `cn-east-3`（控制台右上角）
 
 ## 1. IAM 子用户（三人各一个）
 
 控制台搜索 **统一身份认证 IAM**。
 
 - [ ] 用户组 `zhixun-team`
-- [ ] 组权限至少包含：ECS FullAccess、RDS FullAccess、DCS FullAccess、OBS Administrator、VPC FullAccess、以及码道/CodeArts 相关只读或开发权限
+- [ ] 组权限至少包含：ECS FullAccess、RDS FullAccess、DCS FullAccess、OBS Administrator、VPC FullAccess、ModelArts FullAccess、SWR FullAccess、以及码道/CodeArts 相关只读或开发权限
 - [ ] 子用户：`zhixun-a`、`zhixun-b`、`zhixun-c`（开启控制台密码登录 + 编程访问）
 - [ ] 三人用子用户登录验证
 - [ ] Access Key 只放本机 `.env`，禁止入库、禁止发群
@@ -38,7 +38,7 @@
 控制台搜索 **对象存储 OBS**。
 
 - [ ] 桶名全局唯一，例如 `zhixun-dev-<学号或随机>`
-- [ ] 区域 `cn-north-4`
+- [ ] 区域 `cn-east-3`
 - [ ] 桶策略 **私有**
 - [ ] 上传一个 `ping.txt`，再下载，截图
 - [ ] 对象路径记入 `docs/cloud-evidence.md`
