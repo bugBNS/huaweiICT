@@ -6,4 +6,4 @@ pydantic>=2.6,<3
 numpy>=1.26
 pillow>=10
 ultralytics>=8.3
-opencv-python-headless>=4.9
+opencv-python>=4.9
