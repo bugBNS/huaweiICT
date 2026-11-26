@@ -1,0 +1,30 @@
+{
+  "coordinate_mode": "GROUND_METRIC",
+  "image_size": [
+    1920,
+    1080
+  ],
+  "camera_params": ".tmp_sdg/artifacts/b3904eeae9c70d1b84a0_014f5a0f9461dfae29d5_run_13_seed_587824276.ceiling_00.camera_params.jsonl",
+  "frame_index": 0,
+  "homography_pixel_to_ground": [
+    [
+      -0.01398152563900862,
+      0.006742555992656582,
+      9.781284143307738
+    ],
+    [
+      0.0033781149709002788,
+      0.027906458016845003,
+      -18.312478451722356
+    ],
+    [
+      1.7284960175352698e-11,
+      0.002366312572424864,
+      1.0
+    ]
+  ],
+  "reprojection_rmse_px": 0.0,
+  "inliers": 22,
+  "threshold_rmse_px": 5.0,
+  "note": "H maps pixel (u,v) to ground (x,y) metres at z=0; failure falls back to IMAGE_NORMALIZED"
+}

@@ -1,0 +1,50 @@
+{
+  "run_id": "b3904eeae9c70d1b84a0_014f5a0f9461dfae29d5_run_13_seed_587824276",
+  "coordinate_mode": "GROUND_METRIC",
+  "n_tracks_used": 3,
+  "n_tracks_skipped": 2,
+  "history_steps": 8,
+  "horizon_steps": 10,
+  "dt_ms": 200,
+  "methods": {
+    "cv": {
+      "n_evaluated": 17,
+      "n_skipped": 0,
+      "miss_rate": 0.0,
+      "by_class": {
+        "forklift": {
+          "n": 11,
+          "ade_m": 2.2682,
+          "fde_m": 4.3206,
+          "physical_violation_rate": 0.2727
+        },
+        "person": {
+          "n": 6,
+          "ade_m": 0.387,
+          "fde_m": 0.7675,
+          "physical_violation_rate": 0.0
+        }
+      }
+    },
+    "ca": {
+      "n_evaluated": 17,
+      "n_skipped": 0,
+      "miss_rate": 0.0,
+      "by_class": {
+        "forklift": {
+          "n": 11,
+          "ade_m": 17.3684,
+          "fde_m": 43.5845,
+          "physical_violation_rate": 0.8586
+        },
+        "person": {
+          "n": 6,
+          "ade_m": 1.4878,
+          "fde_m": 3.6463,
+          "physical_violation_rate": 0.2778
+        }
+      }
+    }
+  },
+  "note": "Single-run smoke; same-run camera split, not a generalization benchmark."
+}

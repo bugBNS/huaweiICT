@@ -1,0 +1,139 @@
+<mxfile host="app.diagrams.net" type="device">
+  <diagram id="flow" name="1-业务流程">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="600">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="t1" value="智巡卫士 2.0 业务流程（C-01）" style="text;fontSize=18;fontStyle=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="400" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="n1" value="视频上传&#10;/videos" style="rounded=1;whiteSpace=wrap;fillColor=#1890FF;fontColor=#ffffff;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="40" y="120" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="n2" value="场景标定&#10;/calibration" style="rounded=1;whiteSpace=wrap;fillColor=#1890FF;fontColor=#ffffff;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="250" y="120" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="n3" value="算法分析&#10;检测/跟踪/预测" style="rounded=1;whiteSpace=wrap;fillColor=#722ED1;fontColor=#ffffff;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="460" y="120" width="150" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="n4" value="风险评估&#10;TTC/PET/风险场" style="rounded=1;whiteSpace=wrap;fillColor=#722ED1;fontColor=#ffffff;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="680" y="120" width="150" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="n5" value="策略推演&#10;/simulation" style="rounded=1;whiteSpace=wrap;fillColor=#FA8C16;fontColor=#ffffff;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="900" y="120" width="150" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="n6" value="人工复核&#10;/events" style="rounded=1;whiteSpace=wrap;fillColor=#52C41A;fontColor=#ffffff;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="120" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="n7" value="事件归档&#10;+ 实验对比" style="rounded=1;whiteSpace=wrap;fillColor=#52C41A;fontColor=#ffffff;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1330" y="120" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#595959;" edge="1" parent="1" source="n1" target="n2"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#595959;" edge="1" parent="1" source="n2" target="n3"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#595959;" edge="1" parent="1" source="n3" target="n4"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#595959;" edge="1" parent="1" source="n4" target="n5"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#595959;" edge="1" parent="1" source="n5" target="n6"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#595959;" edge="1" parent="1" source="n6" target="n7"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="note" value="颜色 = 信息类型：蓝 检测事实输入　紫 模型预测/风险　橙 仿真推演　绿 人工复核&#10;全程无自动控制：策略只是仿真建议，必须经人工确认或驳回后才落库。" style="text;align=left;fontSize=12;fontColor=#595959;" vertex="1" parent="1">
+          <mxGeometry x="40" y="240" width="700" height="40" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="wire" name="2-页面线框">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1700" pageHeight="1100">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="h" value="页面线框（低保真，布局用）" style="text;fontSize=16;fontStyle=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="40" y="10" width="400" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="p1" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#D9D9D9;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="760" height="460" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1t" value="分析（离线） /analysis/:taskId" style="text;fontStyle=1;align=left;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="50" y="66" width="300" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1a" value="3D 场景（70%）&#10;地面 / 货架 / 墙&#10;叉车 · 行人&#10;历史轨迹（实线）&#10;预测分支（虚线 + 得分）&#10;风险热力场" style="rounded=0;fillColor=#E6F7FF;strokeColor=#1890FF;align=center;" vertex="1" parent="1">
+          <mxGeometry x="55" y="100" width="470" height="390" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1b" value="时间轴&#10;播放 / 单步 / 倍速&#10;────────&#10;对象列表&#10;ID · 类型 · 速度&#10;────────&#10;预测信息&#10;时域 · K · 最高得分&#10;────────&#10;风险指标&#10;TTC · PET · 指数&#10;（非事故概率）" style="rounded=0;fillColor=#F9F0FF;strokeColor=#722ED1;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="540" y="100" width="240" height="360" as="geometry"/>
+        </mxCell>
+        <mxCell id="p1c" value="状态栏：模型版本 · 坐标模式 · 连接状态" style="text;fontSize=11;fontColor=#8C8C8C;align=left;" vertex="1" parent="1">
+          <mxGeometry x="55" y="492" width="400" height="20" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="p2" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#D9D9D9;" vertex="1" parent="1">
+          <mxGeometry x="840" y="60" width="800" height="460" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2t" value="风险推演 /simulation/:taskId" style="text;fontStyle=1;align=left;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="850" y="66" width="320" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2a" value="KEEP&#10;风险 0.65&#10;延误 0s" style="rounded=1;fillColor=#FFF7E6;strokeColor=#FA8C16;" vertex="1" parent="1">
+          <mxGeometry x="860" y="100" width="170" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2b" value="减速 ★推荐&#10;风险 0.21&#10;延误 3.2s" style="rounded=1;fillColor=#FA8C16;fontColor=#ffffff;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1045" y="100" width="170" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2c" value="停车&#10;风险 0.05&#10;延误 8.5s" style="rounded=1;fillColor=#FFF7E6;strokeColor=#FA8C16;" vertex="1" parent="1">
+          <mxGeometry x="1230" y="100" width="170" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2d" value="绕行&#10;不可行&#10;（置灰）" style="rounded=1;fillColor=#F5F5F5;strokeColor=#D9D9D9;fontColor=#8C8C8C;" vertex="1" parent="1">
+          <mxGeometry x="1415" y="100" width="170" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2e" value="左：KEEP 轨迹 + 风险场" style="rounded=0;fillColor=#E6F7FF;strokeColor=#1890FF;" vertex="1" parent="1">
+          <mxGeometry x="860" y="190" width="360" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2f" value="右：所选策略 轨迹 + 风险场&#10;（时间同步播放）" style="rounded=0;fillColor=#E6F7FF;strokeColor=#1890FF;" vertex="1" parent="1">
+          <mxGeometry x="1235" y="190" width="360" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2g" value="指标对比表：最大/平均风险 · TTC 最小 · 延误 · 能耗　　[确认推荐] [选其他] [驳回并填理由]" style="rounded=0;fillColor=#F6FFED;strokeColor=#52C41A;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="860" y="405" width="735" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="p2h" value="推荐卡片固定标注：仿真建议，需人工确认。无推荐结果时不显示推荐，前端不自行挑选。" style="text;fontSize=11;fontColor=#8C8C8C;align=left;" vertex="1" parent="1">
+          <mxGeometry x="860" y="462" width="700" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="p3" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#D9D9D9;" vertex="1" parent="1">
+          <mxGeometry x="40" y="560" width="760" height="300" as="geometry"/>
+        </mxCell>
+        <mxCell id="p3t" value="事件复核 /events" style="text;fontStyle=1;align=left;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="50" y="566" width="300" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="p3a" value="筛选：风险等级 · 复核状态 · 时间范围 · 关键词" style="rounded=0;fillColor=#FAFAFA;strokeColor=#D9D9D9;" vertex="1" parent="1">
+          <mxGeometry x="55" y="598" width="730" height="36" as="geometry"/>
+        </mxCell>
+        <mxCell id="p3b" value="事件表：ID · 时间 · 位置 · 风险等级 · 系统推荐 · 复核状态 · 操作" style="rounded=0;fillColor=#FAFAFA;strokeColor=#D9D9D9;" vertex="1" parent="1">
+          <mxGeometry x="55" y="646" width="730" height="40" as="geometry"/>
+        </mxCell>
+        <mxCell id="p3c" value="详情：视频片段 · 3D 回放 · 关键帧　　右侧指标：对象 / TTC / PET / 指数 / 推荐理由&#10;底部：[确认推荐] [驳回 + 必填理由]　复核人取当前用户，时间后端生成" style="rounded=0;fillColor=#F6FFED;strokeColor=#52C41A;align=left;spacingLeft=8;" vertex="1" parent="1">
+          <mxGeometry x="55" y="700" width="730" height="70" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="p4" value="" style="rounded=0;fillColor=#ffffff;strokeColor=#D9D9D9;" vertex="1" parent="1">
+          <mxGeometry x="840" y="560" width="800" height="300" as="geometry"/>
+        </mxCell>
+        <mxCell id="p4t" value="总览 /dashboard　与　实验对比 /experiments" style="text;fontStyle=1;align=left;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="850" y="566" width="420" height="24" as="geometry"/>
+        </mxCell>
+        <mxCell id="p4a" value="KPI ×4&#10;视频数/风险事件/待复核/风险降低率" style="rounded=0;fillColor=#E6F7FF;strokeColor=#1890FF;" vertex="1" parent="1">
+          <mxGeometry x="860" y="600" width="360" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="p4b" value="风险趋势折线&#10;检测/预测/策略后" style="rounded=0;fillColor=#FAFAFA;strokeColor=#D9D9D9;" vertex="1" parent="1">
+          <mxGeometry x="860" y="675" width="360" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="p4c" value="实验对比表&#10;ADE/FDE/风险降低率/采纳率/耗时" style="rounded=0;fillColor=#F9F0FF;strokeColor=#722ED1;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="600" width="370" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="p4d" value="Pareto 散点 + 消融柱状&#10;如实标注场景数，不凑整" style="rounded=0;fillColor=#FAFAFA;strokeColor=#D9D9D9;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="675" width="370" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="p4e" value="其余页面（视频管理、场景标定、系统设置）为标准列表/表单布局，详见 ui-spec.md §4.2、§4.3、§2.1。" style="text;fontSize=11;fontColor=#8C8C8C;align=left;" vertex="1" parent="1">
+          <mxGeometry x="860" y="770" width="700" height="30" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

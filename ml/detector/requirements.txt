@@ -1,0 +1,4 @@
+# A-02 detector-only deps. Install torch matching your CUDA manually first.
+ultralytics>=8.3
+opencv-python>=4.9
+pyyaml>=6

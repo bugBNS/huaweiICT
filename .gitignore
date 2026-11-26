@@ -61,3 +61,18 @@ data/raw/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# ---------- A-01 临时 metadata（不入库） ----------
+.tmp_sdg/
+
+# ---------- 本地 Claude / 编辑器配置（不推） ----------
+.claude/
+CLAUDE.md
+.codeartsdoer/
+
+# ---------- 训练/检测产物（不入库） ----------
+runs/
+data/sdg_yolo/
+ml/detector/weights/
+*.jpg
+*.jpeg
